@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -94,7 +95,7 @@ section h2 {
 }
 
 section p {
-  margin: 0;
+  margin-top: 0;
 }
 
 
@@ -102,23 +103,75 @@ section p {
    WORKS
 ========================= */
 
-article {
-  padding: 35px;
+.work-card {
+  overflow: hidden;
 
   background: #ffffff;
 
   border: 1px solid #e5e5e5;
-  border-radius: 12px;
+  border-radius: 16px;
 
   box-shadow:
-    0 5px 20px rgba(0, 0, 0, 0.05);
+    0 8px 30px rgba(0, 0, 0, 0.07);
 }
 
-article h3 {
+.work-image {
+  display: block;
+
+  width: 100%;
+  max-height: 500px;
+
+  object-fit: cover;
+  object-position: top;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.work-content {
+  padding: 35px;
+}
+
+.work-content h3 {
   margin-top: 0;
   margin-bottom: 15px;
 
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+}
+
+.work-info {
+  margin-top: 25px;
+
+  color: #555;
+  line-height: 2;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.work-button {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 12px 28px;
+
+  color: #ffffff;
+  background: #222;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.work-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
 }
 
 
@@ -176,7 +229,21 @@ footer p {
     font-size: 1.35rem;
   }
 
-  article {
+  .work-content {
     padding: 25px 20px;
+  }
+
+  .work-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .work-image {
+    max-height: 420px;
+  }
+
+  .work-button {
+    width: 100%;
+
+    text-align: center;
   }
 }
