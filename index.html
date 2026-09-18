@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>TOWA PORTFOLIO</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,8 +19,10 @@
 
   <main>
 
+    <!-- 自己紹介 -->
     <section>
       <h2>自己紹介</h2>
+
       <p>
         個人でWebサイトの制作・運営を行っています。
         HTML・CSS・JavaScriptを使用し、
@@ -27,8 +30,11 @@
       </p>
     </section>
 
+
+    <!-- できること -->
     <section>
       <h2>できること</h2>
+
       <p>
         HTML / CSS / JavaScript<br>
         レスポンシブ対応<br>
@@ -36,29 +42,67 @@
       </p>
     </section>
 
+
+    <!-- 制作実績 -->
     <section>
       <h2>制作実績</h2>
 
-      <article>
-        <h3>鴛鴦トワ Official Website</h3>
+      <article class="work-card">
 
-        <p>
-          音楽・小説などの創作活動をまとめた公式Webサイトです。
-          サイト構成、デザイン、コーディング、スマートフォン対応、
-          公開後の更新・運用を行っています。
-        </p>
+        <img
+          src="official-site.jpg"
+          alt="鴛鴦トワ Official Websiteの制作画面"
+          class="work-image"
+        >
+
+        <div class="work-content">
+
+          <h3>鴛鴦トワ Official Website</h3>
+
+          <p>
+            音楽・小説などの創作活動をまとめた公式Webサイトです。
+            サイトの企画・構成から公開後の更新・運用まで行っています。
+          </p>
+
+          <p class="work-info">
+            <strong>制作内容：</strong>
+            サイト構成 / デザイン / コーディング / 更新・運用
+            <br>
+
+            <strong>使用技術：</strong>
+            HTML / CSS / JavaScript
+            <br>
+
+            <strong>対応：</strong>
+            PC / スマートフォン
+          </p>
+
+          <a
+            href="https://enoutowa.github.io/official-site/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-button"
+          >
+            サイトを見る
+          </a>
+
+        </div>
+
       </article>
-
     </section>
 
+
+    <!-- お問い合わせ -->
     <section>
       <h2>お問い合わせ</h2>
+
       <p>
         お問い合わせ先は準備中です。
       </p>
     </section>
 
   </main>
+
 
   <footer>
     <p>&copy; TOWA PORTFOLIO</p>
