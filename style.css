@@ -105,6 +105,7 @@ section p {
 
 .work-card {
   padding: 35px;
+  margin-bottom: 45px;
 
   background: #ffffff;
 
@@ -116,7 +117,7 @@ section p {
 }
 
 
-/* 作品スクリーンショット */
+/* スクリーンショット */
 
 .work-image {
   display: block;
@@ -143,11 +144,30 @@ section p {
 }
 
 .work-content h3 {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 15px;
 
   font-size: 1.35rem;
 }
+
+
+/* 自主制作・依頼制作 */
+
+.work-type {
+  display: inline-block;
+
+  margin-bottom: 5px;
+  padding: 3px 12px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  background: #eeeeee;
+  border-radius: 20px;
+}
+
+
+/* 詳細 */
 
 .work-info {
   margin-top: 25px;
@@ -242,6 +262,7 @@ footer p {
 
   .work-card {
     padding: 25px 20px;
+    margin-bottom: 35px;
   }
 
   .work-image {
@@ -252,6 +273,10 @@ footer p {
 
   .work-content h3 {
     font-size: 1.2rem;
+  }
+
+  .work-info {
+    font-size: 0.92rem;
   }
 
   .work-button {
