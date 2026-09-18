@@ -1,238 +1,522 @@
-<!DOCTYPE html>
-<html lang="ja">
+/* =========================
+   BASE
+========================= */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+  box-sizing: border-box;
+}
 
-  <title>TOWA PORTFOLIO</title>
-  <meta
-    name="description"
-    content="Webサイト制作・コーディングを行うTOWAのポートフォリオサイトです。"
-  >
+html {
+  scroll-behavior: smooth;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+  margin: 0;
 
-<body>
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    Meiryo,
+    sans-serif;
 
-  <!-- HEADER -->
-  <header>
-    <h1>TOWA PORTFOLIO</h1>
-    <p>Webサイト制作・コーディング</p>
-  </header>
+  color: #292929;
+  background: #f7f7f7;
 
+  line-height: 1.8;
+}
 
-  <main>
-
-    <!-- ABOUT -->
-    <section>
-      <h2>自己紹介</h2>
-
-      <p>
-        Webサイトの制作・運営を行っています。
-        見た目のデザインだけでなく、
-        「情報が分かりやすく伝わること」
-        「スマートフォンでも使いやすいこと」を大切にしながら制作しています。
-      </p>
-
-      <p>
-        サイトの構成を考えるところから、
-        HTML・CSS・JavaScriptを使用した実装、
-        公開後の更新・運用まで対応しています。
-      </p>
-    </section>
+a {
+  color: inherit;
+}
 
 
-    <!-- SKILLS -->
-    <section>
-      <h2>できること</h2>
+/* =========================
+   HERO
+========================= */
 
-      <div class="skill-grid">
+.hero {
+  min-height: 55vh;
 
-        <div class="skill-card">
-          <h3>Webサイト制作</h3>
-          <p>
-            サイトの目的や掲載内容に合わせて、
-            ページ構成を考えながら制作します。
-          </p>
-        </div>
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-        <div class="skill-card">
-          <h3>HTML / CSS</h3>
-          <p>
-            ページの作成やデザイン調整、
-            レイアウトの変更などに対応します。
-          </p>
-        </div>
+  padding: 70px 20px;
 
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>
-            Webサイトに必要な基本的な動きや、
-            コンテンツ表示の仕組みを実装します。
-          </p>
-        </div>
+  text-align: center;
 
-        <div class="skill-card">
-          <h3>レスポンシブ対応</h3>
-          <p>
-            PCだけでなく、
-            スマートフォンでも見やすいページを制作します。
-          </p>
-        </div>
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
 
-        <div class="skill-card">
-          <h3>更新・運用</h3>
-          <p>
-            公開後の記事・お知らせ・作品などの追加や、
-            ページの修正・管理にも対応します。
-          </p>
-        </div>
+.hero-inner {
+  width: 100%;
+}
 
-        <div class="skill-card">
-          <h3>公開・管理</h3>
-          <p>
-            GitHubを利用したファイル管理や、
-            Webサイトの公開・更新を行っています。
-          </p>
-        </div>
+.hero-label {
+  margin: 0 0 12px;
 
-      </div>
-    </section>
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  color: #888;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(2.2rem, 8vw, 4.5rem);
+
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+}
+
+.hero-copy {
+  margin: 18px 0 0;
+
+  font-size: 1rem;
+  color: #666;
+}
 
 
-    <!-- WORKS -->
-    <section>
-      <h2>制作実績</h2>
+/* =========================
+   MAIN
+========================= */
+
+main {
+  width: min(950px, 90%);
+
+  margin: 0 auto;
+  padding: 90px 0;
+}
 
 
-      <!-- TOWA -->
-      <article class="work-card">
+/* =========================
+   SECTION
+========================= */
 
-        <img
-          src="official-site.jpg"
-          alt="鴛鴦トワ Official Website"
-          class="work-image"
-        >
+section {
+  margin-bottom: 110px;
+}
 
-        <div class="work-content">
+.section-label {
+  margin: 0 0 3px;
 
-          <p class="work-type">自主制作・運営</p>
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
 
-          <h3>鴛鴦トワ Official Website</h3>
+  color: #999;
+}
 
-          <p>
-            音楽・小説などの創作活動をまとめた公式Webサイトです。
-            複数のコンテンツを見やすく整理し、
-            PC・スマートフォンの両方から利用できるよう制作しています。
-          </p>
+section h2 {
+  margin: 0 0 35px;
+  padding-bottom: 12px;
 
-          <div class="work-info">
-            <p>
-              <strong>制作内容</strong><br>
-              サイト構成 / デザイン / コーディング / 更新・運用
-            </p>
+  font-size: 1.65rem;
+  letter-spacing: 0.06em;
 
-            <p>
-              <strong>使用技術</strong><br>
-              HTML / CSS / JavaScript
-            </p>
+  border-bottom: 2px solid #292929;
+}
 
-            <p>
-              <strong>対応</strong><br>
-              PC / スマートフォン
-            </p>
-          </div>
+.about-text {
+  max-width: 760px;
+}
 
-          <a
-            href="https://enoutowa.github.io/official-site/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="work-button"
-          >
-            サイトを見る
-          </a>
-
-        </div>
-
-      </article>
+.about-text p {
+  margin: 0 0 20px;
+}
 
 
-      <!-- LIZE -->
-      <article class="work-card">
+/* =========================
+   SKILLS
+========================= */
 
-        <img
-          src="lize-site.jpg"
-          alt="リゼ Website"
-          class="work-image"
-        >
+.skill-grid {
+  display: grid;
 
-        <div class="work-content">
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
 
-          <p class="work-type">依頼制作</p>
+  gap: 18px;
+}
 
-          <h3>リゼ Website</h3>
+.skill-card {
+  position: relative;
 
-          <p>
-            配信活動を行うクリエイター向けに制作したWebサイトです。
-            活動内容や必要な情報を分かりやすくまとめ、
-            スマートフォンからも閲覧しやすい構成で制作しています。
-          </p>
+  padding: 28px;
 
-          <div class="work-info">
-            <p>
-              <strong>制作内容</strong><br>
-              サイト構成 / デザイン / コーディング
-            </p>
+  background: #ffffff;
 
-            <p>
-              <strong>使用技術</strong><br>
-              HTML / CSS / JavaScript
-            </p>
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+}
 
-            <p>
-              <strong>対応</strong><br>
-              PC / スマートフォン
-            </p>
-          </div>
+.skill-card span {
+  display: block;
 
-        </div>
+  margin-bottom: 10px;
 
-      </article>
+  font-size: 0.72rem;
+  font-weight: 700;
 
-    </section>
+  color: #aaa;
+}
 
+.skill-card h3 {
+  margin: 0 0 10px;
 
-    <!-- CONTACT -->
-    <section class="contact">
-      <h2>お問い合わせ</h2>
+  font-size: 1.05rem;
+}
 
-      <p>
-        Webサイト制作に関するご相談・お問い合わせは、
-        下記メールアドレスまでお願いいたします。
-      </p>
+.skill-card p {
+  margin: 0;
 
-      <a
-        href="mailto:enou.towa.contact@gmail.com"
-        class="contact-button"
-      >
-        メールでお問い合わせ
-      </a>
-
-      <p class="contact-mail">
-        enou.towa.contact@gmail.com
-      </p>
-
-    </section>
-
-  </main>
+  font-size: 0.93rem;
+  color: #555;
+}
 
 
-  <footer>
-    <p>&copy; TOWA PORTFOLIO</p>
-  </footer>
+/* =========================
+   WORKS
+========================= */
 
-</body>
+.work-card {
+  margin-bottom: 55px;
+  padding: 40px;
 
-</html>
+  background: #ffffff;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.work-visual {
+  margin-bottom: 35px;
+
+  text-align: center;
+}
+
+.work-image {
+  display: block;
+
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+
+  margin: 0 auto;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.work-content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.work-type {
+  display: inline-block;
+
+  margin: 0 0 7px;
+  padding: 4px 13px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  background: #eeeeee;
+
+  border-radius: 30px;
+}
+
+.work-content h3 {
+  margin: 4px 0 15px;
+
+  font-size: 1.45rem;
+}
+
+.work-description {
+  margin: 0;
+
+  color: #444;
+}
+
+
+/* =========================
+   WORK SUMMARY
+========================= */
+
+.work-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.work-summary div {
+  padding: 16px;
+
+  background: #f7f7f7;
+
+  border-radius: 9px;
+}
+
+.work-summary strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 0.82rem;
+}
+
+.work-summary p {
+  margin: 0;
+
+  font-size: 0.85rem;
+  color: #555;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature-area {
+  margin-top: 35px;
+}
+
+.feature-area h4,
+.detail-box h4 {
+  margin: 0 0 12px;
+
+  font-size: 1rem;
+}
+
+.feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.feature-tags span {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  font-size: 0.78rem;
+
+  background: #f0f0f0;
+
+  border-radius: 30px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.detail-box {
+  margin-top: 18px;
+  padding: 22px;
+
+  background: #fafafa;
+
+  border-left: 3px solid #333;
+  border-radius: 0 8px 8px 0;
+}
+
+.detail-box p {
+  margin: 0;
+
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.work-button,
+.contact-button {
+  display: inline-block;
+
+  margin-top: 30px;
+  padding: 13px 30px;
+
+  color: #ffffff;
+  background: #222222;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.work-button:hover,
+.contact-button:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.8;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  text-align: center;
+}
+
+.contact .section-label,
+.contact h2 {
+  text-align: left;
+}
+
+.contact > p:not(.section-label):not(.contact-mail) {
+  margin: 0;
+}
+
+.contact-mail {
+  margin: 15px 0 0;
+
+  font-size: 0.88rem;
+  color: #777;
+
+  word-break: break-all;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 35px 20px;
+
+  text-align: center;
+
+  color: #ffffff;
+  background: #222222;
+}
+
+footer p {
+  margin: 0;
+
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   SMARTPHONE
+========================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 43vh;
+
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+
+    letter-spacing: 0.07em;
+  }
+
+  .hero-copy {
+    font-size: 0.9rem;
+  }
+
+
+  main {
+    width: 88%;
+
+    padding: 65px 0;
+  }
+
+
+  section {
+    margin-bottom: 75px;
+  }
+
+  section h2 {
+    margin-bottom: 25px;
+
+    font-size: 1.35rem;
+  }
+
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 21px;
+  }
+
+
+  .work-card {
+    margin-bottom: 38px;
+    padding: 25px 18px;
+  }
+
+  .work-image {
+    max-width: 320px;
+  }
+
+  .work-visual {
+    margin-bottom: 25px;
+  }
+
+  .work-content h3 {
+    font-size: 1.2rem;
+  }
+
+
+  .work-summary {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+
+  .detail-box {
+    padding: 18px;
+  }
+
+
+  .work-button,
+  .contact-button {
+    width: 100%;
+
+    text-align: center;
+  }
+
+}
