@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Webサイト制作・コーディングを行うTOWAのポートフォリオサイトです。"
+    content="Webサイト制作・コーディング・Web機能実装・運用を行うTOWAのポートフォリオサイトです。"
   >
 
   <link rel="stylesheet" href="style.css">
@@ -18,9 +18,16 @@
 <body>
 
   <!-- HEADER -->
-  <header>
-    <h1>TOWA PORTFOLIO</h1>
-    <p>Webサイト制作・コーディング</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">WEB CREATION / DEVELOPMENT</p>
+
+      <h1>TOWA PORTFOLIO</h1>
+
+      <p class="hero-copy">
+        Webサイト制作から、機能実装・公開・運用まで。
+      </p>
+    </div>
   </header>
 
 
@@ -28,74 +35,104 @@
 
     <!-- ABOUT -->
     <section>
+      <p class="section-label">ABOUT</p>
       <h2>自己紹介</h2>
 
-      <p>
-        Webサイトの制作・運営を行っています。
-        見た目のデザインだけでなく、
-        「情報が分かりやすく伝わること」
-        「スマートフォンでも使いやすいこと」を大切にしながら制作しています。
-      </p>
+      <div class="about-text">
 
-      <p>
-        サイトの構成を考えるところから、
-        HTML・CSS・JavaScriptを使用した実装、
-        公開後の更新・運用まで対応しています。
-      </p>
+        <p>
+          Webサイトの制作・運営を行っています。
+          見た目を整えるだけでなく、
+          「必要な情報へ迷わずたどり着けること」
+          「スマートフォンでも使いやすいこと」を大切にしています。
+        </p>
+
+        <p>
+          サイト構成の設計からHTML・CSS・JavaScriptを使用した実装、
+          データを扱う機能、管理機能、公開後の更新・SEO対策まで、
+          実際の運用を考えながら制作しています。
+        </p>
+
+      </div>
     </section>
 
 
     <!-- SKILLS -->
     <section>
+      <p class="section-label">SKILLS</p>
       <h2>できること</h2>
 
       <div class="skill-grid">
 
         <div class="skill-card">
+          <span>01</span>
           <h3>Webサイト制作</h3>
           <p>
-            サイトの目的や掲載内容に合わせて、
-            ページ構成を考えながら制作します。
+            目的や掲載内容を整理し、
+            ページ構成・デザイン・実装まで行います。
           </p>
         </div>
 
         <div class="skill-card">
+          <span>02</span>
           <h3>HTML / CSS</h3>
           <p>
-            ページの作成やデザイン調整、
-            レイアウトの変更などに対応します。
+            Webページの作成、レイアウト、
+            デザイン調整などに対応します。
           </p>
         </div>
 
         <div class="skill-card">
+          <span>03</span>
           <h3>JavaScript</h3>
           <p>
-            Webサイトに必要な基本的な動きや、
-            コンテンツ表示の仕組みを実装します。
+            コンテンツ表示や操作など、
+            Webサイトに必要な動きを実装します。
           </p>
         </div>
 
         <div class="skill-card">
+          <span>04</span>
           <h3>レスポンシブ対応</h3>
           <p>
-            PCだけでなく、
-            スマートフォンでも見やすいページを制作します。
+            PC・スマートフォンなど、
+            画面サイズに合わせて見やすく調整します。
           </p>
         </div>
 
         <div class="skill-card">
-          <h3>更新・運用</h3>
+          <span>05</span>
+          <h3>データを扱う機能</h3>
           <p>
-            公開後の記事・お知らせ・作品などの追加や、
-            ページの修正・管理にも対応します。
+            コメント・依頼情報・メッセージなど、
+            保存が必要なデータを扱う機能を構築します。
           </p>
         </div>
 
         <div class="skill-card">
-          <h3>公開・管理</h3>
+          <span>06</span>
+          <h3>管理・更新機能</h3>
           <p>
-            GitHubを利用したファイル管理や、
-            Webサイトの公開・更新を行っています。
+            公開後もコンテンツを追加・変更しやすい
+            運用方法を考えて実装します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <span>07</span>
+          <h3>GitHubでの管理・公開</h3>
+          <p>
+            ファイルや更新履歴を管理し、
+            GitHub Pagesを利用した公開・運用を行います。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <span>08</span>
+          <h3>SEO・サイト運用</h3>
+          <p>
+            ページ情報、構造化データ、サイトマップなど、
+            検索エンジンを意識したサイト運用を行います。
           </p>
         </div>
 
@@ -105,48 +142,160 @@
 
     <!-- WORKS -->
     <section>
+      <p class="section-label">WORKS</p>
       <h2>制作実績</h2>
 
 
-      <!-- TOWA -->
+      <!-- TOWA OFFICIAL -->
       <article class="work-card">
 
-        <img
-          src="official-site.jpg"
-          alt="鴛鴦トワ Official Website"
-          class="work-image"
-        >
+        <div class="work-visual">
+          <img
+            src="official-site.jpg"
+            alt="鴛鴦トワ Official Website"
+            class="work-image"
+          >
+        </div>
 
         <div class="work-content">
 
-          <p class="work-type">自主制作・運営</p>
+          <p class="work-type">自主制作・継続運営</p>
 
           <h3>鴛鴦トワ Official Website</h3>
 
-          <p>
-            音楽・小説などの創作活動をまとめた公式Webサイトです。
-            複数のコンテンツを見やすく整理し、
-            PC・スマートフォンの両方から利用できるよう制作しています。
+          <p class="work-description">
+            音楽・小説などの創作コンテンツを公開する公式Webサイトです。
+            コンテンツ掲載だけでなく、制作依頼の受付、
+            依頼者とのやり取り、データ保存、管理・更新機能、
+            SEO対策まで含めて構築し、継続的に運用しています。
           </p>
 
-          <div class="work-info">
+
+          <div class="work-summary">
+
+            <div>
+              <strong>制作</strong>
+              <p>
+                構成設計 / デザイン / 実装<br>
+                更新 / 運用
+              </p>
+            </div>
+
+            <div>
+              <strong>使用技術</strong>
+              <p>
+                HTML / CSS / JavaScript<br>
+                データベース連携
+              </p>
+            </div>
+
+            <div>
+              <strong>対応</strong>
+              <p>
+                PC / スマートフォン<br>
+                レスポンシブ対応
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="feature-area">
+
+            <h4>主な実装・機能</h4>
+
+            <div class="feature-tags">
+              <span>制作依頼受付</span>
+              <span>依頼者専用ページ</span>
+              <span>メッセージ送信</span>
+              <span>画像添付</span>
+              <span>管理者返信</span>
+              <span>データベース連携</span>
+              <span>コメント保存</span>
+              <span>応援数保存</span>
+              <span>GitHub連携</span>
+              <span>管理機能</span>
+              <span>SEO対策</span>
+              <span>構造化データ</span>
+              <span>sitemap自動更新</span>
+            </div>
+
+          </div>
+
+
+          <div class="detail-box">
+
+            <h4>制作依頼・専用チャット</h4>
 
             <p>
-              <strong>制作内容</strong><br>
-              サイト構成 / デザイン / コーディング / 更新・運用
-            </p>
-
-            <p>
-              <strong>使用技術</strong><br>
-              HTML / CSS / JavaScript
-            </p>
-
-            <p>
-              <strong>対応</strong><br>
-              PC / スマートフォン
+              承認された依頼者ごとに専用ページを用意し、
+              メッセージ送信、画像添付、管理者からの返信ができる
+              やり取り機能を実装しています。
+              依頼者ごとにURLを分け、他の依頼者とのやり取りが
+              表示されない構成にしています。
             </p>
 
           </div>
+
+
+          <div class="detail-box">
+
+            <h4>データ保存</h4>
+
+            <p>
+              静的ページだけでは保持できない情報を扱うため、
+              データベースを利用しています。
+              コメント、応援数、制作依頼、
+              チャットメッセージ、添付画像情報などを
+              保存できる仕組みを構築しています。
+            </p>
+
+          </div>
+
+
+          <div class="detail-box">
+
+            <h4>公開・管理</h4>
+
+            <p>
+              WebサイトのファイルをGitHubで管理し、
+              GitHub Pagesを利用して公開しています。
+              更新履歴を残しながら運用し、
+              管理画面からサイト内容を更新するための
+              GitHub App連携も導入しています。
+            </p>
+
+          </div>
+
+
+          <div class="detail-box">
+
+            <h4>SEO・検索エンジン対応</h4>
+
+            <p>
+              ページタイトル、説明文、構造化データ、
+              Google Search Console、sitemap.xmlなどを設定しています。
+              BLOGや歌詞コンテンツの追加・削除に合わせて、
+              sitemapも自動更新される仕組みにしています。
+            </p>
+
+          </div>
+
+
+          <div class="detail-box">
+
+            <h4>サイト運用に必要なページ</h4>
+
+            <p>
+              制作依頼を継続して受け付けられるよう、
+              利用規約、お問い合わせ、
+              プライバシーポリシーも整備しています。
+              制作依頼時の支払い・修正・キャンセルや、
+              個人情報の取り扱いについても掲載しています。
+            </p>
+
+          </div>
+
 
           <a
             href="https://enoutowa.github.io/official-site/"
@@ -165,11 +314,13 @@
       <!-- LIZE -->
       <article class="work-card">
 
-        <img
-          src="lize-site.jpg"
-          alt="リゼ Website"
-          class="work-image"
-        >
+        <div class="work-visual">
+          <img
+            src="lize-site.jpg"
+            alt="リゼ Website"
+            class="work-image"
+          >
+        </div>
 
         <div class="work-content">
 
@@ -177,30 +328,42 @@
 
           <h3>リゼ Website</h3>
 
-          <p>
+          <p class="work-description">
             配信活動を行うクリエイター向けに制作したWebサイトです。
-            活動内容や必要な情報を分かりやすくまとめ、
-            スマートフォンからも閲覧しやすい構成で制作しています。
+            活動内容や必要な情報を整理し、
+            PC・スマートフォンのどちらからでも
+            閲覧しやすい構成で制作しています。
           </p>
 
-          <div class="work-info">
 
-            <p>
-              <strong>制作内容</strong><br>
-              サイト構成 / デザイン / コーディング
-            </p>
+          <div class="work-summary">
 
-            <p>
-              <strong>使用技術</strong><br>
-              HTML / CSS / JavaScript
-            </p>
+            <div>
+              <strong>制作</strong>
+              <p>
+                サイト構成 / デザイン<br>
+                コーディング
+              </p>
+            </div>
 
-            <p>
-              <strong>対応</strong><br>
-              PC / スマートフォン
-            </p>
+            <div>
+              <strong>使用技術</strong>
+              <p>
+                HTML / CSS<br>
+                JavaScript
+              </p>
+            </div>
+
+            <div>
+              <strong>対応</strong>
+              <p>
+                PC / スマートフォン<br>
+                レスポンシブ対応
+              </p>
+            </div>
 
           </div>
+
 
           <a
             href="https://lize-official.github.io/official-site/"
@@ -221,11 +384,12 @@
     <!-- CONTACT -->
     <section class="contact">
 
+      <p class="section-label">CONTACT</p>
       <h2>お問い合わせ</h2>
 
       <p>
         Webサイト制作に関するご相談・お問い合わせは、
-        下記メールアドレスまでお願いいたします。
+        メールにてお願いいたします。
       </p>
 
       <a
