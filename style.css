@@ -104,7 +104,7 @@ section p {
 ========================= */
 
 .work-card {
-  overflow: hidden;
+  padding: 35px;
 
   background: #ffffff;
 
@@ -115,20 +115,31 @@ section p {
     0 8px 30px rgba(0, 0, 0, 0.07);
 }
 
+
+/* 作品スクリーンショット */
+
 .work-image {
   display: block;
 
   width: 100%;
-  max-height: 500px;
+  max-width: 420px;
+  height: auto;
 
-  object-fit: cover;
-  object-position: top;
+  margin: 0 auto 30px;
 
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
+
+/* 作品説明 */
+
 .work-content {
-  padding: 35px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .work-content h3 {
@@ -229,21 +240,22 @@ footer p {
     font-size: 1.35rem;
   }
 
-  .work-content {
+  .work-card {
     padding: 25px 20px;
+  }
+
+  .work-image {
+    width: 100%;
+    max-width: 330px;
+    margin-bottom: 25px;
   }
 
   .work-content h3 {
     font-size: 1.2rem;
   }
 
-  .work-image {
-    max-height: 420px;
-  }
-
   .work-button {
     width: 100%;
-
     text-align: center;
   }
 }
