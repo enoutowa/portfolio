@@ -1,286 +1,238 @@
-/* =========================
-   TOWA PORTFOLIO
-========================= */
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TOWA PORTFOLIO</title>
+  <meta
+    name="description"
+    content="Webサイト制作・コーディングを行うTOWAのポートフォリオサイトです。"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>TOWA PORTFOLIO</h1>
+    <p>Webサイト制作・コーディング</p>
+  </header>
+
+
+  <main>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>自己紹介</h2>
+
+      <p>
+        Webサイトの制作・運営を行っています。
+        見た目のデザインだけでなく、
+        「情報が分かりやすく伝わること」
+        「スマートフォンでも使いやすいこと」を大切にしながら制作しています。
+      </p>
+
+      <p>
+        サイトの構成を考えるところから、
+        HTML・CSS・JavaScriptを使用した実装、
+        公開後の更新・運用まで対応しています。
+      </p>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section>
+      <h2>できること</h2>
+
+      <div class="skill-grid">
+
+        <div class="skill-card">
+          <h3>Webサイト制作</h3>
+          <p>
+            サイトの目的や掲載内容に合わせて、
+            ページ構成を考えながら制作します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>HTML / CSS</h3>
+          <p>
+            ページの作成やデザイン調整、
+            レイアウトの変更などに対応します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>
+            Webサイトに必要な基本的な動きや、
+            コンテンツ表示の仕組みを実装します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>レスポンシブ対応</h3>
+          <p>
+            PCだけでなく、
+            スマートフォンでも見やすいページを制作します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>更新・運用</h3>
+          <p>
+            公開後の記事・お知らせ・作品などの追加や、
+            ページの修正・管理にも対応します。
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>公開・管理</h3>
+          <p>
+            GitHubを利用したファイル管理や、
+            Webサイトの公開・更新を行っています。
+          </p>
+        </div>
+
+      </div>
+    </section>
 
-* {
-  box-sizing: border-box;
-}
 
-html {
-  scroll-behavior: smooth;
-}
+    <!-- WORKS -->
+    <section>
+      <h2>制作実績</h2>
 
-body {
-  margin: 0;
 
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Hiragino Kaku Gothic ProN",
-    "Yu Gothic",
-    Meiryo,
-    sans-serif;
+      <!-- TOWA -->
+      <article class="work-card">
 
-  color: #333;
-  background: #f7f7f7;
-  line-height: 1.8;
-}
+        <img
+          src="official-site.jpg"
+          alt="鴛鴦トワ Official Website"
+          class="work-image"
+        >
 
+        <div class="work-content">
 
-/* =========================
-   HEADER
-========================= */
+          <p class="work-type">自主制作・運営</p>
 
-header {
-  min-height: 55vh;
+          <h3>鴛鴦トワ Official Website</h3>
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+          <p>
+            音楽・小説などの創作活動をまとめた公式Webサイトです。
+            複数のコンテンツを見やすく整理し、
+            PC・スマートフォンの両方から利用できるよう制作しています。
+          </p>
 
-  padding: 60px 20px;
+          <div class="work-info">
+            <p>
+              <strong>制作内容</strong><br>
+              サイト構成 / デザイン / コーディング / 更新・運用
+            </p>
 
-  text-align: center;
+            <p>
+              <strong>使用技術</strong><br>
+              HTML / CSS / JavaScript
+            </p>
 
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-}
+            <p>
+              <strong>対応</strong><br>
+              PC / スマートフォン
+            </p>
+          </div>
 
-header h1 {
-  margin: 0;
+          <a
+            href="https://enoutowa.github.io/official-site/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-button"
+          >
+            サイトを見る
+          </a>
 
-  font-size: clamp(2.2rem, 8vw, 4.5rem);
-  letter-spacing: 0.12em;
-  font-weight: 700;
-}
+        </div>
 
-header p {
-  margin-top: 15px;
+      </article>
 
-  font-size: 1rem;
-  letter-spacing: 0.08em;
-  color: #777;
-}
 
+      <!-- LIZE -->
+      <article class="work-card">
 
-/* =========================
-   MAIN
-========================= */
+        <img
+          src="lize-site.jpg"
+          alt="リゼ Website"
+          class="work-image"
+        >
 
-main {
-  width: min(900px, 90%);
-  margin: 0 auto;
-  padding: 80px 0;
-}
+        <div class="work-content">
 
+          <p class="work-type">依頼制作</p>
 
-/* =========================
-   SECTION
-========================= */
+          <h3>リゼ Website</h3>
 
-section {
-  margin-bottom: 100px;
-}
+          <p>
+            配信活動を行うクリエイター向けに制作したWebサイトです。
+            活動内容や必要な情報を分かりやすくまとめ、
+            スマートフォンからも閲覧しやすい構成で制作しています。
+          </p>
 
-section h2 {
-  margin-bottom: 30px;
-  padding-bottom: 10px;
+          <div class="work-info">
+            <p>
+              <strong>制作内容</strong><br>
+              サイト構成 / デザイン / コーディング
+            </p>
 
-  font-size: 1.6rem;
-  letter-spacing: 0.08em;
+            <p>
+              <strong>使用技術</strong><br>
+              HTML / CSS / JavaScript
+            </p>
 
-  border-bottom: 2px solid #333;
-}
+            <p>
+              <strong>対応</strong><br>
+              PC / スマートフォン
+            </p>
+          </div>
 
-section p {
-  margin-top: 0;
-}
+        </div>
 
+      </article>
 
-/* =========================
-   WORKS
-========================= */
+    </section>
 
-.work-card {
-  padding: 35px;
-  margin-bottom: 45px;
 
-  background: #ffffff;
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>お問い合わせ</h2>
 
-  border: 1px solid #e5e5e5;
-  border-radius: 16px;
+      <p>
+        Webサイト制作に関するご相談・お問い合わせは、
+        下記メールアドレスまでお願いいたします。
+      </p>
 
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.07);
-}
+      <a
+        href="mailto:enou.towa.contact@gmail.com"
+        class="contact-button"
+      >
+        メールでお問い合わせ
+      </a>
 
+      <p class="contact-mail">
+        enou.towa.contact@gmail.com
+      </p>
 
-/* スクリーンショット */
+    </section>
 
-.work-image {
-  display: block;
+  </main>
 
-  width: 100%;
-  max-width: 420px;
-  height: auto;
 
-  margin: 0 auto 30px;
+  <footer>
+    <p>&copy; TOWA PORTFOLIO</p>
+  </footer>
 
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
+</body>
 
-  box-shadow:
-    0 4px 18px rgba(0, 0, 0, 0.08);
-}
-
-
-/* 作品説明 */
-
-.work-content {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.work-content h3 {
-  margin-top: 5px;
-  margin-bottom: 15px;
-
-  font-size: 1.35rem;
-}
-
-
-/* 自主制作・依頼制作 */
-
-.work-type {
-  display: inline-block;
-
-  margin-bottom: 5px;
-  padding: 3px 12px;
-
-  font-size: 0.8rem;
-  font-weight: 600;
-
-  background: #eeeeee;
-  border-radius: 20px;
-}
-
-
-/* 詳細 */
-
-.work-info {
-  margin-top: 25px;
-
-  color: #555;
-  line-height: 2;
-}
-
-
-/* =========================
-   BUTTON
-========================= */
-
-.work-button {
-  display: inline-block;
-
-  margin-top: 20px;
-  padding: 12px 28px;
-
-  color: #ffffff;
-  background: #222;
-
-  text-decoration: none;
-  font-weight: 600;
-
-  border-radius: 8px;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.work-button:hover {
-  transform: translateY(-2px);
-  opacity: 0.8;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  padding: 35px 20px;
-
-  text-align: center;
-
-  background: #222;
-  color: #ffffff;
-}
-
-footer p {
-  margin: 0;
-
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-}
-
-
-/* =========================
-   SMARTPHONE
-========================= */
-
-@media (max-width: 600px) {
-
-  header {
-    min-height: 45vh;
-    padding: 50px 20px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-    letter-spacing: 0.08em;
-  }
-
-  header p {
-    font-size: 0.9rem;
-  }
-
-  main {
-    width: 88%;
-    padding: 60px 0;
-  }
-
-  section {
-    margin-bottom: 70px;
-  }
-
-  section h2 {
-    font-size: 1.35rem;
-  }
-
-  .work-card {
-    padding: 25px 20px;
-    margin-bottom: 35px;
-  }
-
-  .work-image {
-    width: 100%;
-    max-width: 330px;
-    margin-bottom: 25px;
-  }
-
-  .work-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .work-info {
-    font-size: 0.92rem;
-  }
-
-  .work-button {
-    width: 100%;
-    text-align: center;
-  }
-}
+</html>
